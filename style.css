@@ -12,6 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+}
+
 #app {
   box-sizing: border-box;
   display: flex;
@@ -21,11 +25,14 @@
   padding: 25px 30px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 480px;
 }
 
 #main {
-  height: 100%;
+  background-image: linear-gradient(rgb(76, 192, 238), lightskyblue);
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -74,7 +81,7 @@
 
 .date {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .temp {
@@ -99,7 +106,7 @@ img {
 }
 
 .rest {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -141,5 +148,39 @@ img {
 }
 
 .humid-text {
+  margin: 0px;
+}
+
+.div-min {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.min {
+  border: 0;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.min-text {
+  margin: 0px;
+}
+
+.div-max {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.max {
+  border: 0;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.max-text {
   margin: 0px;
 }
