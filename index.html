@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,32 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="main">
+      <div id="app">
+        <form id="form">
+          <input type="text" name="location" id="location" />
+          <button type="submit" id="submit">&#10004;</button>
+        </form>
+        <div class="w-container">
+          <h2 class="location">Van Nuys, CA, United States</h2>
+          <h3 class="date">August 25, 2024</h3>
+          <img src="public/weather.svg" alt="" />
+          <h1 class="temp">79°F</h1>
+          <p class="condition">Clear</p>
+          <p class="feels">Feels like 79°F</p>
+          <div class="rest">
+            <div class="div-uv">
+              <h3 class="uv-text">UV Index</h3>
+              <div class="uv">8</div>
+            </div>
+            <div class="div-humid">
+              <h3 class="humid-text">Humidity</h3>
+              <div class="humid">49.1%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
